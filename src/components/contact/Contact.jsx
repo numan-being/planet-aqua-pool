@@ -33,8 +33,8 @@ const contact = () => {
           <article className='contact__option'>
             <FaWhatsapp className='contact__option-icon'/>
             <h4 className='text-xl'>Whatsapp</h4>
-            <h5 className='text-xl'>+91 8073030696</h5>
-            <a className='text' href="https://wa.me/918073030696" target="_blank" rel='noreferrer'>Send a message</a>
+            <h5 className='text-xl'>+91 9380663886</h5>
+            <a className='text' href="https://wa.me/919380663886" target="_blank" rel='noreferrer'>Send a message</a>
           </article>
         </div>
       </div>

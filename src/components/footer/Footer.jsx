@@ -42,13 +42,13 @@ const Footer = () => {
       />
       <div className='flex w-11/12 m-auto  items-center justify-center md:justify-between'>
           <p className='text-xl md:text-xl pt-8  text-gray-400 hover:text-blue-400'>
-            Planet Aqua Pool Pvt Ltd
+            Planet Aqua Pool 2023
           </p>
         <span
           className='md:flex hidden items-center pt-8  text-gray-400 justify-between'
           style={{ fontFamily: "Poppins" }}>
-          <p className='mx-2 hover:text-blue-400'>Cookies </p>
-          <p className='mx-2 hover:text-blue-400'> Privacy and Policies</p>
+          <p> Developed By</p>
+          <a className='ml-1 hover:text-blue-400' href="https://www.numanahmed.me/"> Numan Ahmed</a>
         </span>
       </div>
     </div>
