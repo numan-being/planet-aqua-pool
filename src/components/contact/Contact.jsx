@@ -27,14 +27,14 @@ const contact = () => {
             <MdOutlineEmail className='contact__option-icon'/>
             <h4 className='text-xl'>Email</h4>
             <h5 className='text-xl'>contact@planetaquapool.in</h5>
-            <a className='text' href="contact@planetaquapool.in" target="_blank" rel='noreferrer'>Send a message</a>
+            <a className='text' href="mailto:contact@planetaquapool.in" target="_blank" rel='noreferrer'>Send a message</a>
           </article>
 
           <article className='contact__option'>
             <FaWhatsapp className='contact__option-icon'/>
             <h4 className='text-xl'>Whatsapp</h4>
-            <h5 className='text-xl'>+91 9008861800</h5>
-            <a className='text' href="https://wa.me/919008861800" target="_blank" rel='noreferrer'>Send a message</a>
+            <h5 className='text-xl'>+91 8073030696</h5>
+            <a className='text' href="https://wa.me/918073030696" target="_blank" rel='noreferrer'>Send a message</a>
           </article>
         </div>
       </div>

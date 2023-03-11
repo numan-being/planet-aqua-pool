@@ -1,7 +1,7 @@
 import React from 'react'
 import './experience.css'
 
-import {MdPool, MdVerifiedUser, MdFace} from 'react-icons/md'
+import {MdPool, MdVerifiedUser} from 'react-icons/md'
 import {IoWomanSharp} from 'react-icons/io5'
 import {AiFillExperiment} from 'react-icons/ai'
 import {FaShower} from 'react-icons/fa'
@@ -46,7 +46,7 @@ const Experience = () => {
         <div class="icon-wrapper">
             <MdVerifiedUser/>
             </div>
-            <h3 className='text-xl p-2 text-slate-900 font-semibold'>Qualified Coaches</h3>
+            <h3 className='text-xl p-2 text-slate-900 font-semibold'>Certified Trainer's</h3>
             <p>
             Experienced professionals to provide expert guidance to help swimmers of all levels to improve their technique.
             </p>
@@ -77,13 +77,15 @@ const Experience = () => {
         <div class="column">
         <div class="card rounded-3xl">
         <div class="icon-wrapper">
-            <MdFace/>
+            <MdVerifiedUser/>
             </div>
-            <h3 className='text-xl p-2 text-slate-900 font-semibold'>Coaching for children with special needs</h3>
+            <h3 className='text-xl p-2 text-slate-900 font-semibold'>Certified Trainer's</h3>
             <p>
-            A safe and supportive swimming program designed for children with special needs, providing a range of physical, social, and emotional benefits.
+            Experienced professionals to provide expert guidance to help swimmers of all levels to improve their technique.
             </p>
           </div>
+        </div>
+        <div class="column">
         </div>
       </div>
         </div>

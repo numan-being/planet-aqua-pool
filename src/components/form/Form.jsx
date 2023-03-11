@@ -1,6 +1,5 @@
 import React from "react";
 import logo from "../../assets/logo.png";
-import videobannner from "../../assets/bannernow1.png";
 import video from "../../assets/firstvideo.mp4";
 
 const Form = () => {
@@ -47,10 +46,6 @@ const Form = () => {
 
               opacity: 1,
               filter: "brightness(0.4)",
-
-              backgroundImage: `url(${videobannner})`,
-              backgroundRepeat: "no-repeat",
-              zIndex: -1,
             }}
           />
         </div>

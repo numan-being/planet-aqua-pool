@@ -48,7 +48,7 @@ const Testimonials = () => {
   return (
     <section id='testimonials'>
       <h1
-        className='text-center text-4xl font-bold mt-16 mb-4  text-green-300 xl:text-6xl'
+        className='text-center text-4xl font-bold mb-4  text-green-300 xl:text-6xl'
         style={{ color: "#4a4a4a", fontWeight: 900 }}>
         <strong>FEEDBACK </strong>
       </h1>
@@ -59,7 +59,7 @@ const Testimonials = () => {
         <strong>What clients say about us.</strong>
       </h5>
 
-      <div className='m-10'>
+      <div className='m-10 '>
       <Swiper
         slidesPerView={1}
         spaceBetween={8}

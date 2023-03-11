@@ -40,14 +40,6 @@ const Faq = () => {
           </div>
 
           <div class="faq-question">
-            <input id="q5" type="checkbox" class="panel"/>
-            <div class="plus">+</div>
-            <label for="q5" class="panel-title">Is it safe to swim in a pool with chlorine?</label>
-            <div class="panel-content">Yes, swimming in a pool with properly maintained chlorine levels is generally safe. Chlorine is a disinfectant that helps kill germs and bacteria in the water.
-          </div>
-          </div>
-
-          <div class="faq-question">
             <input id="q6" type="checkbox" class="panel"/>
             <div class="plus">+</div>
             <label for="q6" class="panel-title">What are the benefits of swimming?</label>

@@ -7,20 +7,21 @@ const About = () => {
     <section id="about">
       <div >
         <h1
-          className="text-center text-4xl font-bold text-green-300 xl:text-6xl"
+          className="text-center mt-14 text-4xl font-bold text-green-300 xl:text-6xl"
           style={{ color: "#4a4a4a", fontWeight: 900}}
         >
           <strong>ABOUT US</strong>
         </h1>
       </div>
 
-      <div className="flex md:flex mb-32 place-content-center">
+      <div className="flex md:flex place-content-center lg:mb-52">
       <section class="container">
         <section class="relative md:p-0 transform duration-500 cursor-pointer hover:-translate-y-1 ">
             <div>
-            <img class="rounded-full h-[23rem] xl:max-w-6xl" src={man} alt=""/>
+            <img class="rounded-full h-[23rem]" src={man} alt=""/>
             </div>
-            <div class="content bg-white p-2 pt-6 rounded- md:p-12 pb-12 hover:shadow-xl lg:max-w-lg w-full lg:absolute top-20 right-56">
+            <div className="lg:absolute inset-0 flex items-center justify-center">
+            <div class="bg-white p-2 pt-6 rounded- md:p-12 pb-12 hover:shadow-xl lg:max-w-xl w-full lg:absolute top-20 items-center justify-center">
                 <div class="font-bold text-sm">
                     <p>Welcome To</p>
                 </div>
@@ -28,17 +29,15 @@ const About = () => {
                 <p class="mt-4 text-lg leading-relaxed text-gray-600">
                 Looking for a clean and safe place to swim in Bangalore? Look no further than our indoor swimming pool! With clear and sparkling water, modern amenities, and trained Coaches, our pool is the perfect place to relax, exercise, and cool off. 
                 </p>
-                <ul class="list-none mt-6">
+                <div className="flex flex-col md:flex-row ">
+                <ul class="list-none mt-6 pr-6">
                   <li class="py-2">
                     <div class="flex items-center">
                       <div>
-                        <span
-                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-700 bg-blue-50 mr-3"
-                          ><MdOutlineWaterDrop/></span>
                       </div>
-                      <div>
-                        <h4 class="text-gray-600">
-                          Pay Per Session
+                      <div >
+                        <h4 class=" text-gray-600 font-bold ml-2">
+                          Membership Packages
                         </h4>
                       </div>
                     </div>
@@ -47,11 +46,11 @@ const About = () => {
                     <div class="flex items-center">
                       <div>
                       <span
-                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-700 bg-blue-50 mr-3"
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-700 bg-blue-50 "
                           ><MdOutlineWaterDrop/></span>
                       </div>
                       <div>
-                        <h4 class="text-gray-600">Monthly Membership</h4>
+                        <h4 class="text-gray-600">Pay Per Session</h4>
                       </div>
                     </div>
                   </li>
@@ -59,11 +58,11 @@ const About = () => {
                     <div class="flex items-center">
                       <div>
                       <span
-                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-700 bg-blue-50 mr-3"
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-700 bg-blue-50 "
                           ><MdOutlineWaterDrop/></span>
                       </div>
                       <div>
-                        <h4 class="text-gray-600">Quarterly Membership</h4>
+                        <h4 class=" text-gray-600">Monthly Membership</h4>
                       </div>
                     </div>
                   </li>
@@ -71,11 +70,11 @@ const About = () => {
                     <div class="flex items-center">
                       <div>
                       <span
-                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-700 bg-blue-50 mr-3"
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-700 bg-blue-50 "
                           ><MdOutlineWaterDrop/></span>
                       </div>
                       <div>
-                        <h4 class="text-gray-600">Half-Yearly Membership</h4>
+                        <h4 class=" text-gray-600">Quarterly Membership</h4>
                       </div>
                     </div>
                   </li>
@@ -83,15 +82,142 @@ const About = () => {
                     <div class="flex items-center">
                       <div>
                       <span
-                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-700 bg-blue-50 mr-3"
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-700 bg-blue-50 "
                           ><MdOutlineWaterDrop/></span>
                       </div>
                       <div>
-                        <h4 class="text-gray-600">Annual Membership</h4>
+                        <h4 class=" text-gray-600">Half-Year Membership</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                      <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-700 bg-blue-50 "
+                          ><MdOutlineWaterDrop/></span>
+                      </div>
+                      <div>
+                        <h4 class=" text-gray-600">Annual Membership</h4>
                       </div>
                     </div>
                   </li>
                 </ul>
+                <div>
+                <ul class="list-none mt-6">
+                <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                      </div>
+                      <div >
+                        <h4 class=" text-gray-600 font-bold ml-2">
+                          Our Activities
+                        </h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-700 bg-blue-50 "
+                          ><MdOutlineWaterDrop/></span>
+                      </div>
+                      <div>
+                        <h4 class="text-gray-600">
+                          Kids Learn to Swim
+                        </h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                      <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-700 bg-blue-50 "
+                          ><MdOutlineWaterDrop/></span>
+                      </div>
+                      <div>
+                        <h4 class="text-gray-600">Kids Intermediate</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                      <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-700 bg-blue-50 "
+                          ><MdOutlineWaterDrop/></span>
+                      </div>
+                      <div>
+                        <h4 class="text-gray-600">Kids Stroke School</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                      <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-700 bg-blue-50 "
+                          ><MdOutlineWaterDrop/></span>
+                      </div>
+                      <div>
+                        <h4 class="text-gray-600">Kids Competitive</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                      <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-700 bg-blue-50 "
+                          ><MdOutlineWaterDrop/></span>
+                      </div>
+                      <div>
+                        <h4 class="text-gray-600">Kids Pre-Competitive</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                      <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-700 bg-blue-50 "
+                          ><MdOutlineWaterDrop/></span>
+                      </div>
+                      <div>
+                        <h4 class="text-gray-600">Adults Mixed Learn to Swim</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                      <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-700 bg-blue-50 "
+                          ><MdOutlineWaterDrop/></span>
+                      </div>
+                      <div>
+                        <h4 class="text-gray-600">Ladies only Learn to Swim</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                      <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-700 bg-blue-50 "
+                          ><MdOutlineWaterDrop/></span>
+                      </div>
+                      <div>
+                        <h4 class="text-gray-600">Adults Advance Training</h4>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                </div>
+                </div>
+                </div>
             </div>
         </section>
     </section>
