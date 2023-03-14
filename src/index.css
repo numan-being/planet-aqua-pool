@@ -48,7 +48,7 @@ body{
 
 
 section {
-    margin-top: 8rem;
+    margin-top: 10rem;
 }
 
 section > h2, section > h5 {
@@ -86,14 +86,14 @@ a:hover {
 }
 
 .btn:hover {
-    background: var(--color-white);
-    color: var(--color-bg);
+    background: rgb(44, 65, 134);
+    color: rgb(255, 255, 255);
     border-color: transparent;
 }
 
 .btn-primary {
-    background: var(--color-primary);
-    color: var(--color-bg);
+    background: rgb(35, 176, 201);
+    color: white;
 }
 
 img {

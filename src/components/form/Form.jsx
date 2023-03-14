@@ -1,178 +1,199 @@
 import React from "react";
 import logo from "../../assets/logo.png";
 import video from "../../assets/firstvideo.mp4";
+import { useRef as UseRef } from "react";
+import emailjs from "emailjs-com";
+import { Link } from "react-router-dom";
 
 const Form = () => {
+  const form = UseRef("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_cu5y2va",
+      "template_gt7pxy9",
+      form.current,
+      "gsLldhZuL_9mswikp"
+    );
+
+    e.target.reset();
+  };
 
   return (
-    <section id="form">
-      <div className="relative  pb-36">
+    <div className="relative  pb-36">
+
         <div
           className="flex justify-between absolute z-10 w-full  "
           style={{ width: "100%" }}
         >
+          <Link to="/">
           <div
-            className="pl-6 pt-2  md:p-8 md:px-20 flex items-center"
+            className="backdrop pt-2 pl-4 md:p-8 md:px-20 flex w-96 items-center"
             style={{ width: "100%" }}
           >
-            <img alt="Logo" src={logo} className="h-14 w-14" />
+
+            <img alt="Logo" src={logo} className="h-16 w-16" />
             <p
-              className="text-3xl p-3"
+              className="text-[32px] p-3"
               style={{
                 fontFamily: "poppins",
-                color: "#44b2e5",
+                color: "#F1F6F5",
                 fontWeight: 700,
               }}
             >
               Planet Aqua Pool
-              <span className="text-blue-200 text-lg ">
+              <span className=" text-gray-200 text-[24px] font-normal">
                 <p>Unit of Planet Fitness</p>
               </span>
             </p>
+
+          </div>
+          </Link>
+          <div className=" p-10 hidden lg:flex">
+            <a
+              type="button"
+              href="https://wa.me/919380663886"
+              class="flex bg-[#2ea44f] mr-4 text-white rounded-3xl border-4 px-6 py-3 mb-8 "
+            >
+              <svg width="35" height="40" viewBox="0 0 24 20">
+                <path
+                  d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+                  fill="white"
+                ></path>{" "}
+              </svg>
+              <p class="text-xl pt-1">9380663886 </p>
+            </a>
+
+            <a
+              type="button"
+              href="tel:8073030696"
+              class="flex bg-[#1f3b60] mr-4 text-white rounded-3xl border-4  px-6 py-3 mb-8"
+            >
+              <svg width="25" height="34" viewBox="0 0 24 20">
+                <path
+                  d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  fill="white"
+                ></path>{" "}
+              </svg>
+              <p class="text-xl pt-1 pl-3 ">8073030696 </p>
+            </a>
           </div>
         </div>
 
-        <div className="absolute top-0 " style={{ zIndex: -1 }}>
-          <video
-            src={video}
-            autoPlay
-            loop
-            muted
-            className="w-full h-full "
-            style={{
-              objectFit: "cover",
-              width: "100vw",
-              height: "90vh",
 
-              opacity: 1,
-              filter: "brightness(0.4)",
-            }}
-          />
-        </div>
+      <div className="absolute top-0 " style={{ zIndex: -1 }}>
+        <video
+          src={video}
+          autoPlay
+          loop
+          muted
+          className="w-full h-full "
+          style={{
+            objectFit: "cover",
+            width: "100vw",
+            height: "115vh",
+            opacity: 1,
+            filter: "brightness(0.4)",
+          }}
+        />
+      </div>
+      <div
+        className="p-2 py-6 absolute  w-full  top-2/4  "
+        id="new"
+        style={{ zIndex: 100 }}
+      >
         <div
-        className=' mb-48 p-2 py-6 absolute  w-full  top-2/4  '
-        id='new'
-        style={{ zIndex: 100 }}>
-        <div
-          className='flex flex-col lg:flex-row justify-between m-auto  items-center'
-          style={{ width: "90vw" }}>
+          className="flex flex-col lg:flex-row justify-between m-auto  items-center"
+          style={{ width: "90vw" }}
+        >
           <p
             style={{ fontWeight: 800, color: "#44b2e5  " }}
-            className='text-5xl md:text-5xl  mt-10 mb-8 xl:text-6xl '>
-            <span className='text-2xl text-white'> BOOK A </span>
+            className="text-5xl md:text-5xl  mt-10 mb-8 xl:text-6xl "
+          >
+            <span className="text-2xl text-white"> BOOK A </span>
             <br />
             FREE TRAIL ?
           </p>
-          <div className='m-2  flex flex-col items-start md:items-end '>
-            <span className='sm:text-lg md:text-xl font-medium text-white hover:text-white flex'>
-            "A day at the pool is a day well spent."
+          <div className=" flex flex-col items-start md:items-end ">
+            <span className="sm:text-lg mb-4 md:text-3xl font-semibold text-white hover:text-white flex">
+              "A day at the pool is a day well spent."
             </span>
-            <a href='https://wa.me/+919876543210'>
-              <span
-                className='text-lg md:text-xl font-bold text-center  text-white hover:text-blue-400 ease-in duration-150  my-4 flex items-center'
-                style={{ fontFamily: "Poppins", fontWeight: 400 }}>
-                <svg
-                  className='w-6 h-6   md:w-8 md:h-8 mx-2 md:mx-3  '
-                  fill='#44b2e5'
-                  xmlns='http://www.w3.org/2000/svg'
-                  viewBox='0 0 49.89 50.11'>
-                  <defs>
-                    <style></style>
-                  </defs>
-                  <path
-                    class='a'
-                    d='M42.62,7.28a24.85,24.85,0,0,0-39.1,30L0,50.11l13.17-3.45a24.78,24.78,0,0,0,11.87,3h0A24.84,24.84,0,0,0,42.62,7.28M25.05,45.49h0a20.63,20.63,0,0,1-10.51-2.88l-.75-.44L6,44.21,8.05,36.6l-.49-.78a20.65,20.65,0,1,1,17.49,9.67M36.37,30c-.62-.31-3.67-1.81-4.24-2s-1-.31-1.39.31-1.61,2-2,2.44-.72.46-1.34.15a16.8,16.8,0,0,1-5-3.08A18.51,18.51,0,0,1,19,23.53c-.36-.62,0-1,.27-1.26s.63-.73.94-1.09a4.21,4.21,0,0,0,.62-1,1.13,1.13,0,0,0-.06-1.08c-.15-.31-1.39-3.37-1.91-4.61s-1-1-1.4-1.06-.77,0-1.19,0a2.29,2.29,0,0,0-1.65.78,7,7,0,0,0-2.17,5.18c0,3.05,2.22,6,2.53,6.42s4.38,6.68,10.6,9.36a35.12,35.12,0,0,0,3.54,1.31,8.55,8.55,0,0,0,3.91.25c1.2-.18,3.67-1.5,4.19-2.95a5.11,5.11,0,0,0,.36-2.95c-.15-.26-.56-.42-1.19-.73'></path>
-                </svg>{" "}
-                Click{" "}
-                <p className='font-semibold  mx-2 ' style={{color:"#44b2e5"}}> here </p> to
-                WhatsApp us{" "}
-              </span>
-            </a>
-            <a href='mailto:contact@planetaquapool.in'>
-              <span
-                className=' text-xl font-semibold text-white hover:text-blue-400 ease-in duration-150 text-right flex items-center'
-                style={{ fontFamily: "Poppins" }}>
-                <svg
-                  className='w-6 h-6   md:w-8 md:h-8 mx-2 md:mx-3 '
-                  fill='#44b2e5'
-                  xmlns='http://www.w3.org/2000/svg'
-                  viewBox='0 0 56.01 40.01'>
-                  <defs>
-                    <style></style>
-                  </defs>
-                  <path
-                    class='a'
-                    d='M54,0H2A2,2,0,0,0,0,2V38a2,2,0,0,0,2,2H54a2,2,0,0,0,2-2V2A2,2,0,0,0,54,0ZM50.73,4,28,21.48,5.28,4ZM52,36H4V8.06L26.79,25.59a2,2,0,0,0,2.44,0L52,8.06Z'></path>
-                </svg>
-                contact@planetaquapool.com
-              </span>
-            </a>
           </div>
         </div>
         <div
-          className=' w-full border-2 border-blue-100 m-auto shadow-lg px-4 py-10 bg-white md:mt-16'
-          style={{ width: "90vw" }}>
-          <p
-            className=' text-xl md:text-2xl m-auto  p-2 md:p-4  md:mx-4 font-bold md:font-extrabold	'
-            style={{ color: "#4a4a4a" }}>
-            Your Name
-          </p>
-          <input
-            required
-            type='text'
-            placeholder='Name Surname'
-            className='border-2 hover:border-blue-300 text-blue-500 hover:shadow-xl text-base md:text-xl  ease-in duration-300 w-5/6 p-4 flex m-auto md:mb-2'
-            style={{ outlineWidth: 0, fontFamily: "Poppins", width: "95%" }}
-          />
-          <p
-            className='md:text-xl text-lg  md:textm-auto  p-2 md:p-4  md:mx-4 font-bold md:font-extrabold	'
-            style={{ color: "#4a4a4a" }}>
-            Your Email
-          </p>
-          <input
-            required
-            type='email'
-            placeholder='youremail@gmail.com'
-            className='border-2 hover:border-blue-300  text-blue-500 hover:shadow-xl  text-base md:text-xl    ease-in duration-300 w-5/6 p-4 flex m-auto md:mb-2'
-            style={{ outlineWidth: 0, fontFamily: "Poppins", width: "95%" }}
-          />
-          <p
-            className='md:text-xl text-lg  md:text m-auto  p-2 md:p-4  md:mx-4 font-bold md:font-extrabold	'
-            style={{ color: "#4a4a4a" }}>
-            Phone Number
-          </p>
-          <input
-            required
-            type='number'
-            placeholder='9995559992'
-            className='border-2 hover:border-blue-300 text-blue-500 hover:shadow-xl text-base md:text-xl    ease-in duration-300 w-5/6 p-4 flex m-auto md:mb-2'
-            style={{ outlineWidth: 0, fontFamily: "Poppins", width: "95%" }}
-          />
-          <p
-            className='md:text-xl text-lg md:text m-auto  p-2 md:p-4  md:mx-4 font-bold md:font-extrabold	'
-            style={{ color: "#4a4a4a" }}>
-            Whats your query?
-          </p>
-          {/* <input
-            required
-            value={work}
-            onChange={(e) => setWork(e.target.value)}
-            type='text'
-            placeholder='Details are like good news. The more you share,the better'
-            className='border-2 hover:border-blue-300 hover:shadow-xl text-blue-500  text-base md:text-xl   ease-in duration-300 w-5/6 p-4 h-40 flex m-auto md:mb-2'
-            style={{ outlineWidth: 0, fontFamily: "Poppins", width: "95%" }}
-          /> */}
+          className=" w-full border-2 border-blue-100 m-auto shadow-lg px-4 py-10 bg-white md:mt-16"
+          style={{ width: "90vw" }}
+        >
+          <form ref={form} onSubmit={sendEmail}>
+            <p
+              className=" text-xl md:text-2xl m-auto  p-2 md:p-4  md:mx-4 font-bold md:font-extrabold	"
+              style={{ color: "#4a4a4a" }}
+            >
+              Your Name
+            </p>
+            <input
+              required
+              type="text"
+              name="name"
+              placeholder="Your Fullname"
+              className="border-2 hover:border-blue-300 text-blue-500 hover:shadow-xl text-base md:text-xl  ease-in duration-300 w-5/6 p-4 flex m-auto md:mb-2"
+              style={{ outlineWidth: 0, fontFamily: "Poppins", width: "95%" }}
+            />
+            <p
+              className="md:text-xl text-lg  md:textm-auto  p-2 md:p-4  md:mx-4 font-bold md:font-extrabold	"
+              style={{ color: "#4a4a4a" }}
+            >
+              Your Email
+            </p>
+            <input
+              required
+              type="email"
+              name="email"
+              placeholder="youremail@email.com"
+              className="border-2 hover:border-blue-300  text-blue-500 hover:shadow-xl  text-base md:text-xl    ease-in duration-300 w-5/6 p-4 flex m-auto md:mb-2"
+              style={{ outlineWidth: 0, fontFamily: "Poppins", width: "95%" }}
+            />
+            <p
+              className="md:text-xl text-lg  md:text m-auto  p-2 md:p-4  md:mx-4 font-bold md:font-extrabold	"
+              style={{ color: "#4a4a4a" }}
+            >
+              Phone Number
+            </p>
+            <input
+              required
+              type="number"
+              name="phone"
+              placeholder="9876543210"
+              className="border-2 hover:border-blue-300 text-blue-500 hover:shadow-xl text-base md:text-xl    ease-in duration-300 w-5/6 p-4 flex m-auto md:mb-2"
+              style={{ outlineWidth: 0, fontFamily: "Poppins", width: "95%" }}
+            />
+            <p
+              className="md:text-xl text-lg md:text m-auto  p-2 md:p-4  md:mx-4 font-bold md:font-extrabold	"
+              style={{ color: "#4a4a4a" }}
+            >
+              What do you need help with?
+            </p>
             <textarea
-            required
-            type='text'
-            placeholder='Details are like good news. The more you share,the better'
-            className='border-2 hover:border-blue-300 hover:shadow-xl text-blue-500  text-base md:text-xl   ease-in duration-300 w-5/6 p-4 h-40 flex m-auto md:mb-2'
-            style={{ outlineWidth: 0, fontFamily: "Poppins", width: "95%" }}
-          />
+              required
+              type="text"
+              name="message"
+              placeholder="Your Message"
+              className="border-2 hover:border-blue-300 hover:shadow-xl text-blue-500  text-base md:text-xl   ease-in duration-300 w-5/6 p-4 h-40 flex m-auto md:mb-2"
+              style={{ outlineWidth: 0, fontFamily: "Poppins", width: "95%" }}
+            />
+
+            <button
+              type="submit"
+              className="ml-8 mt-2 btn btn-primary text-white font-bold rounded-full p-4 w-48"
+            >
+              Send Message{" "}
+            </button>
+          </form>
         </div>
       </div>
     </div>
-    </section>
   );
 };
 

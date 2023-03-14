@@ -1,11 +1,12 @@
 import React from "react";
-//import { ImWhatsapp } from "react-icons/im";
 import logo from "../../assets/logo.png";
 import video from "../../assets/firstvideo.mp4";
 import "../../App.css";
-// import { Link } from 'react-router-dom';
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
+  const [activeNav, setActiveNav] = useState("#");
   return (
     <header>
       <div
@@ -16,14 +17,17 @@ const Header = () => {
           borderBottomLeftRadius: "7%",
         }}
       >
+
         <div
           className="flex justify-between absolute z-10 w-full  "
           style={{ width: "100%" }}
         >
+          <Link to="/">
           <div
             className="backdrop pt-2 pl-4 md:p-8 md:px-20 flex w-96 items-center"
             style={{ width: "100%" }}
           >
+
             <img alt="Logo" src={logo} className="h-16 w-16" />
             <p
               className="text-[32px] p-3"
@@ -38,12 +42,14 @@ const Header = () => {
                 <p>Unit of Planet Fitness</p>
               </span>
             </p>
+
           </div>
+          </Link>
           <div className=" p-10 hidden lg:flex">
-            <a
+          <a
               type="button"
               href="https://wa.me/919380663886"
-              class="flex bg-[#2ea44f] mr-4 text-white rounded-3xl border-4 px-6 py-3 mb-8 w-52 "
+              class="flex bg-[#2ea44f] mr-4 text-white rounded-3xl border-4 px-6 py-3 mb-8 "
             >
               <svg width="35" height="40" viewBox="0 0 24 20">
                 <path
@@ -51,15 +57,13 @@ const Header = () => {
                   fill="white"
                 ></path>{" "}
               </svg>
-              <p class="text-xl pt-1">
-                Message us!{" "}
-              </p>
+              <p class="text-xl pt-1">9380663886 </p>
             </a>
 
             <a
               type="button"
-              href="tel:9380663886"
-              class="flex bg-[#1f3b60] mr-4 text-white rounded-3xl border-4  px-6 py-3 mb-8 w-40"
+              href="tel:8073030696"
+              class="flex bg-[#1f3b60] mr-4 text-white rounded-3xl border-4  px-6 py-3 mb-8"
             >
               <svg width="25" height="34" viewBox="0 0 24 20">
                 <path
@@ -67,9 +71,7 @@ const Header = () => {
                   fill="white"
                 ></path>{" "}
               </svg>
-              <p class="text-xl pt-1 pl-3 ">
-                Call us!{" "}
-              </p>
+              <p class="text-xl pt-1 pl-3 ">8073030696 </p>
             </a>
           </div>
         </div>
@@ -91,7 +93,7 @@ const Header = () => {
             }}
           />
           <div
-            className="banner__text__div  top-2/4 transform -translate-y-2/4	 p-8 md:px-20  md:py-24  absolute text-5xl md:text-7xl "
+            className="banner__text__div  top-2/4 transform -translate-y-2/4	 p-8 md:px-20  md:py-24  absolute text-xl md:text-7xl "
             style={{ fontFamily: "Poppins", fontWeight: 800 }}
           >
             <h1 className="text-white font-black ">DIVE </h1>
@@ -104,9 +106,11 @@ const Header = () => {
                 width: "fit-content",
               }}
             >
-              
-              <a href="/#form" style={{ fontFamily: "Poppins", color: "#F1F6F5" }}>
-                REACH OUT TO US
+              <a href="/form"
+                  onClick={() => setActiveNav("/form")}
+                  className={activeNav === "/form" ? "active" : ""} style={{ fontFamily: "Poppins" }}>
+                {" "}
+                REACH OUT TO US{" "}
               </a>
               <p>&nbsp;&nbsp;&nbsp;</p>
               <svg

@@ -2,9 +2,11 @@ import React from 'react'
 import './experience.css'
 
 import {MdPool, MdVerifiedUser} from 'react-icons/md'
-import {IoWomanSharp} from 'react-icons/io5'
+import {ImWoman} from 'react-icons/im'
 import {AiFillExperiment} from 'react-icons/ai'
 import {FaShower} from 'react-icons/fa'
+import {GiBinoculars, GiVacuumCleaner} from 'react-icons/gi'
+import {TbOlympics, TbMoodKid} from 'react-icons/tb'
 
 
 const Experience = () => {
@@ -26,18 +28,18 @@ const Experience = () => {
             </div>
             <h3 className='text-xl p-2 text-slate-900 font-semibold'>Separate Infant Pool</h3>
             <p>
-            A shallow and safe pool designed for babies and young children, separate from more active swimmers.
+            Designated pool area specifically designed for young children.
             </p>
           </div>
         </div>
         <div class="column">
         <div class="card rounded-3xl">
         <div class="icon-wrapper">
-            <IoWomanSharp/>
+            <ImWoman/>
             </div>
             <h3 className='text-xl p-2 text-slate-900 font-semibold'>Women-only Sessions</h3>
             <p>
-            A swimming session exclusively for women, providing a private and secure environment to enjoy swimming.
+            A exclusive women only session to enjoy swimming.
             </p>
           </div>
         </div>
@@ -48,7 +50,40 @@ const Experience = () => {
             </div>
             <h3 className='text-xl p-2 text-slate-900 font-semibold'>Certified Trainer's</h3>
             <p>
-            Experienced professionals to provide expert guidance to help swimmers of all levels to improve their technique.
+            Experienced professionals to provide expert guidance.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+        <div class="card rounded-3xl">
+            <div class="icon-wrapper">
+              <TbOlympics/>
+            </div>
+            <h3 className='text-xl p-2 text-slate-900 font-semibold'>Semi-Olympic Pool</h3>
+            <p>
+            Semi-Olympic pool for competitive swimming training.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+        <div class="card rounded-3xl">
+            <div class="icon-wrapper">
+              <GiBinoculars/>
+            </div>
+            <h3 className='text-xl p-2 text-slate-900 font-semibold'>Spectator Gallery</h3>
+            <p>
+            Platform around the pool designed for spectators to watch.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+        <div class="card rounded-3xl">
+            <div class="icon-wrapper">
+              <GiVacuumCleaner/>
+            </div>
+            <h3 className='text-xl p-2 text-slate-900 font-semibold'>Safe & Hygienic Facilities</h3>
+            <p>
+            Ensuring cleanliness through proper maintenance & protocols.
             </p>
           </div>
         </div>
@@ -57,9 +92,9 @@ const Experience = () => {
             <div class="icon-wrapper">
               <FaShower/>
             </div>
-            <h3 className='text-xl p-2 text-slate-900 font-semibold'>Hygienic changing & Shower Areas</h3>
+            <h3 className='text-xl p-2 text-slate-900 font-semibold'>Hygienic Shower & Changing Areas</h3>
             <p>
-            Clean and sanitized spaces designated for changing clothes and taking showers in a public facility.
+            Clean and sanitized spaces for changing clothes & Showers.
             </p>
           </div>
         </div>
@@ -70,22 +105,20 @@ const Experience = () => {
             </div>
             <h3 className='text-xl p-2 text-slate-900 font-semibold'>Advanced Filtration Systems</h3>
             <p>
-            An advanced pool filtration system removes impurities and bacteria from swimming pool water, creating a safer and more enjoyable swimming experience.
+            Advanced System to remove impurities and bacteria.
             </p>
           </div>
         </div>
         <div class="column">
         <div class="card rounded-3xl">
         <div class="icon-wrapper">
-            <MdVerifiedUser/>
+            <TbMoodKid/>
             </div>
-            <h3 className='text-xl p-2 text-slate-900 font-semibold'>Certified Trainer's</h3>
+            <h3 className='text-xl p-2 text-slate-900 font-semibold'>Classes for children with special needs</h3>
             <p>
-            Experienced professionals to provide expert guidance to help swimmers of all levels to improve their technique.
+            Swimming lessons for children with disabilities or special needs.
             </p>
           </div>
-        </div>
-        <div class="column">
         </div>
       </div>
         </div>

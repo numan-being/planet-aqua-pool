@@ -40,7 +40,7 @@ function Brochures() {
   return (
     <div
       className="noscrollbar p-2 flex-col justify-around"
-      style={{ overflowY: "hidden", minHeight: "100vh" }}
+      style={{ overflowY: "hidden" }}
     >
       <>
         <h1

@@ -7,7 +7,7 @@ const About = () => {
     <section id="about">
       <div >
         <h1
-          className="text-center mt-14 text-4xl font-bold text-green-300 xl:text-6xl"
+          className="text-center mt-5 text-4xl font-bold text-green-300 xl:text-6xl"
           style={{ color: "#4a4a4a", fontWeight: 900}}
         >
           <strong>ABOUT US</strong>

@@ -13,21 +13,24 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const app = () => {
   return (
-    <BrowserRouter>
-      <Header />
-      <Nav />
-      <Routes>
-        <Route exact path="/" component={<Header/>} />
-        <Route path="/#form" component={<Form/>} />
-      </Routes>
-      <About />
-      <Experience />
-      <Brochures />
-      <Testimonials />
-      <Contact />
-      <Faq />
-      <Footer />
-    </BrowserRouter>
+<BrowserRouter>
+  <Routes>
+    <Route exact path="/form" element={<Form />} />
+    <Route path="/" element={
+      <>
+        <Header />
+        <Nav />
+        <About />
+        <Experience />
+        <Brochures />
+        <Testimonials />
+        <Contact />
+        <Faq />
+        <Footer />
+      </>
+    } />
+  </Routes>
+</BrowserRouter>
   );
 };
 
