@@ -93,7 +93,7 @@ const Header = () => {
             }}
           />
           <div
-            className="banner__text__div  top-2/4 transform -translate-y-2/4	 p-8 md:px-20  md:py-24  absolute text-xl md:text-7xl "
+            className="banner__text__div  top-2/4 transform -translate-y-2/4	 p-8 md:px-20  md:py-24  absolute text-5xl md:text-7xl "
             style={{ fontFamily: "Poppins", fontWeight: 800 }}
           >
             <h1 className="text-white font-black ">DIVE </h1>
