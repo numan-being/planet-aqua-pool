@@ -5,6 +5,7 @@ import "../../App.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
+
 const Header = () => {
   const [activeNav, setActiveNav] = useState("#");
   return (
@@ -63,7 +64,7 @@ const Header = () => {
             <a
               type="button"
               href="tel:8073030696"
-              class="flex bg-[#1f3b60] mr-4 text-white rounded-3xl border-4  px-6 py-3 mb-8"
+              class="flex bg-[#112B3C] mr-4 text-white rounded-3xl border-4  px-6 py-3 mb-8"
             >
               <svg width="25" height="34" viewBox="0 0 24 20">
                 <path
@@ -92,8 +93,9 @@ const Header = () => {
               borderBottomLeftRadius: "7%",
             }}
           />
+          <div>
           <div
-            className="banner__text__div  top-2/4 transform -translate-y-2/4	 p-8 md:px-20  md:py-24  absolute text-5xl md:text-7xl "
+            className="banner__text__div  top-2/4 transform -translate-y-2/4 ml-6 md:px-20   absolute text-5xl md:text-7xl "
             style={{ fontFamily: "Poppins", fontWeight: 800 }}
           >
             <h1 className="text-white font-black ">DIVE </h1>
@@ -102,8 +104,8 @@ const Header = () => {
             <span
               className="reachout text-2xl p-2 py-4 flex  justify-center items-center mt-4 ease-in duration-300	"
               style={{
-                border: " 1px solid #44b2e5 ",
-                width: "fit-content",
+                border: " 1px solid #3AB4F2 ",
+                width: "90%",
               }}
             >
               <a href="/form"
@@ -123,6 +125,37 @@ const Header = () => {
                 <path d="m29.82 0-1.42 1.43 6.35 6.35h-34.75v2.02h34.75l-6.35 6.36 1.42 1.43 8.8-8.8z"></path>
               </svg>
             </span>
+            <div className="mt-6 flex sm:hidden">
+          <a
+              type="button"
+              href="https://wa.me/919380663886"
+              class="flex bg-[#2ea44f] mr-4 text-white rounded-3xl border-4 px-6 py-2"
+            >
+              <svg width="35" height="40" viewBox="0 0 16 18">
+                <path
+                  d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+                  fill="white"
+                ></path>
+              </svg>
+              <p class="text-xl font-normal pt-1 pl-3 ">Whatsapp</p>
+            </a>
+
+            <a
+              type="button"
+              href="tel:8073030696"
+              class="flex bg-[#112B3C] mr-4 text-white rounded-3xl border-4 px-6 py-2"
+            >
+            <svg width="25" height="34" viewBox="0 0 22 22">
+                <path
+                  d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  fill="white"
+                ></path>
+              </svg>
+              <p class="text-xl font-normal pt-1 pl-3 ">Call</p>
+            </a>
+          </div>
+          </div>
+
           </div>
           <svg
             fill="white"
