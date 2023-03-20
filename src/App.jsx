@@ -26,12 +26,12 @@ const app = () => {
         <Header />
         <Nav />
         <About />
-        <Map />
         <Experience />
         <Carousel />
         <Brochures />
         <Testimonials />
         <Contact />
+        <Map />
         <Faq />
         <Footer />
       </>

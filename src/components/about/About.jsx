@@ -14,7 +14,7 @@ const About = () => {
         </h1>
       </div>
 
-      <div className="flex md:flex place-content-center lg:mb-52">
+      <div className="flex md:flex place-content-center lg:mb-72">
       <section class="container">
         <section class="relative md:p-0 transform duration-500 cursor-pointer hover:-translate-y-1 ">
             <div>

@@ -10,7 +10,7 @@ export default function Carousel() {
   return (
     <>
       <h1
-        className="text-center text-4xl font-bold  md:mt-36 mb-16 xl:mx-4 mt-20 text-green-300 xl:text-6xl"
+        className="text-center mt-12 p-1 text-4xl font-bold md:mt-36 mb-16 xl:mx-4 text-green-300 xl:text-6xl"
         style={{ color: "#4a4a4a", fontWeight: 900 }}
       >
         <strong>SWIMMING STROKES</strong>
@@ -38,7 +38,7 @@ export default function Carousel() {
           className="parallax-bg blur-sm"
           style={{
             "background-image":
-              "url(https://images.unsplash.com/photo-1559257619-ce02754770ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1410&q=80)",
+              "url(https://images.pexels.com/photos/8688188/pexels-photo-8688188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
           }}
           data-swiper-parallax="-23%"
         ></div>

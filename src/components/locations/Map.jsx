@@ -6,13 +6,13 @@ const Map = () => {
   return (
     <section class="text-gray-600 body-font mt-36">
       <h1
-        className="text-center text-4xl font-bold mt-32  text-green-300 xl:text-6xl"
+        className="text-center text-4xl font-bold mt-8 text-green-300 xl:text-6xl"
         style={{ color: "#4a4a4a", fontWeight: 900 }}
       >
 
-<h3 class="text-3xl font-semibold mt-2 mb-4">Our Fitness Locations</h3>
+<h3 class="text-3xl font-semibold mt-2 mb-4">Our Premium Fitness Locations</h3>
       </h1>
-      <p class="text-center container text-xl leading-relaxed text-gray-600">Planet Fitness branches are located in convenient areas across the city.</p>
+      <p class="text-center container text-xl leading-relaxed text-gray-600">Planet Fitness branches are located in convenient areas across Bangalore.</p>
       
       <div class="container  px-5 py-10 mx-auto flex flex-wrap">
         <div class="place-content-center flex flex-wrap w-full">

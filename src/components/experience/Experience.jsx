@@ -13,7 +13,7 @@ const Experience = () => {
   return (
     <section id='experience'>
      <h1
-        className='text-center text-4xl font-bold  md:mt-36 mb-16 xl:mx-4  text-green-300 xl:text-6xl'
+        className='text-center text-4xl font-bold md:mt-36 mb-16 xl:mx-4  text-green-300 xl:text-6xl'
         style={{ color: "#4a4a4a", fontWeight: 900 }}>
         <strong>OUR SERVICES</strong>
       </h1>

@@ -31,6 +31,12 @@ const Footer = () => {
                 className='w-16 sociallogo1'
               />
           </a>
+          <a href='https://www.youtube.com/'>
+            <img alt=""
+                src='https://www.logo.wine/a/logo/YouTube/YouTube-Icon-Full-Color-Logo.wine.svg'
+                className='w-16 sociallogo1'
+              />
+          </a>
         </div>
     </div>
 
