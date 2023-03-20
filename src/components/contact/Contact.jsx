@@ -13,8 +13,6 @@ const contact = () => {
         <strong>Where can you Find us ?</strong>
       </h1>
 
-
-
       <div className='container contact__container'>
 
         <div>
@@ -39,6 +37,11 @@ const contact = () => {
         </div>
       </div>
 
+
+
+      {/* <div className='container'>
+      <iframe className='border-2 rounded-lg' title='mytitle' width='100%' height='600px' src="https://www.google.com/maps/d/u/0/embed?mid=1heBujOZ_J_AsF1mPmjzrcWUhuc-D23g&ehbc=2E312F"></iframe>
+      </div> */}
       
     </section>
   )

@@ -26,10 +26,10 @@ const Footer = () => {
             />
           </a>
           <a href='https://www.facebook.com/Planetaquapool/'>
-          <img alt=""
-              src='https://www.logo.wine/a/logo/Facebook/Facebook-f_Logo-Blue-Logo.wine.svg'
-              className='w-16 sociallogo1'
-            />
+            <img alt=""
+                src='https://www.logo.wine/a/logo/Facebook/Facebook-f_Logo-Blue-Logo.wine.svg'
+                className='w-16 sociallogo1'
+              />
           </a>
         </div>
     </div>
@@ -45,10 +45,10 @@ const Footer = () => {
             Planet Aqua Pool 2023
           </p>
         <span
-          className='md:flex hidden items-center pt-8  text-gray-400 justify-between'
+          className='md:flex hidden items-center pt-8 justify-between'
           style={{ fontFamily: "Poppins" }}>
           <p> Developed By</p>
-          <a className='ml-1 hover:text-blue-400' href="https://www.numanahmed.me/"> Numan Ahmed</a>
+          <a className='ml-1 text-black hover:text-blue-600' href="https://twitter.com/numan_being"> Numan Ahmed</a>
         </span>
       </div>
     </div>

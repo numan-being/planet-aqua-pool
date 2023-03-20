@@ -4,7 +4,7 @@ import './faq.css'
 
 const Faq = () => {
   return (
-    <section id='portfolio'>
+    <section id='portfolio' className='mt-20'>
 
       <div className='faq-sec rounded-3xl'>
       <div class="faq-header">Frequently Asked Questions</div>

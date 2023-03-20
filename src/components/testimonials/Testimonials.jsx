@@ -46,7 +46,7 @@ const data = [
 
 const Testimonials = () => {
   return (
-    <section id='testimonials'>
+    <section id='testimonials' className="mt-32">
       <h1
         className='text-center text-4xl font-bold mb-4  text-green-300 xl:text-6xl'
         style={{ color: "#4a4a4a", fontWeight: 900 }}>

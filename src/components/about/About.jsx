@@ -4,7 +4,7 @@ import {MdOutlineWaterDrop} from "react-icons/md"
 
 const About = () => {
   return (
-    <section id="about">
+    <section id="about" className="mt-32">
       <div >
         <h1
           className="text-center mt-5 text-4xl font-bold text-green-300 xl:text-6xl"
@@ -27,7 +27,7 @@ const About = () => {
                 </div>
                 <h3 class="text-3xl font-semibold mt-2">Planet Aqua Pool</h3>
                 <p class="mt-4 text-lg leading-relaxed text-gray-600">
-                Looking for a clean and safe place to swim in Bangalore? Look no further than our indoor swimming pool! With clear and sparkling water, modern amenities, and trained Coaches, our pool is the perfect place to relax, exercise, and cool off. 
+                Looking for a clean and safe place to swim in Bangalore? Look no further than our indoor swimming pool! the newest addition to the Planet Fitness family. With clear and sparkling water, modern amenities, and trained Coaches, our pool is the perfect place to relax, exercise, and cool off. 
                 </p>
                 <div className="flex flex-col md:flex-row ">
                 <ul class="list-none mt-6 pr-6">
@@ -62,7 +62,7 @@ const About = () => {
                           ><MdOutlineWaterDrop/></span>
                       </div>
                       <div>
-                        <h4 class=" text-gray-600">Monthly Membership</h4>
+                        <h4 class=" text-gray-600">Monthly</h4>
                       </div>
                     </div>
                   </li>
@@ -74,7 +74,7 @@ const About = () => {
                           ><MdOutlineWaterDrop/></span>
                       </div>
                       <div>
-                        <h4 class=" text-gray-600">Quarterly Membership</h4>
+                        <h4 class=" text-gray-600">Quarterly</h4>
                       </div>
                     </div>
                   </li>
@@ -86,7 +86,7 @@ const About = () => {
                           ><MdOutlineWaterDrop/></span>
                       </div>
                       <div>
-                        <h4 class=" text-gray-600">Half-Year Membership</h4>
+                        <h4 class=" text-gray-600">Half-Yearly</h4>
                       </div>
                     </div>
                   </li>
@@ -98,7 +98,7 @@ const About = () => {
                           ><MdOutlineWaterDrop/></span>
                       </div>
                       <div>
-                        <h4 class=" text-gray-600">Annual Membership</h4>
+                        <h4 class=" text-gray-600">Annual</h4>
                       </div>
                     </div>
                   </li>

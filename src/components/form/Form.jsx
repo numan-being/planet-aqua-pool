@@ -93,7 +93,7 @@ const Form = () => {
           style={{
             objectFit: "cover",
             width: "100vw",
-            height: "115vh",
+            height: "150vh",
             opacity: 1,
             filter: "brightness(0.4)",
           }}

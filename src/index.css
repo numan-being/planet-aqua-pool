@@ -47,9 +47,9 @@ body{
 }
 
 
-section {
+/* section {
     margin-top: 10rem;
-}
+} */
 
 section > h2, section > h5 {
     text-align: center;
