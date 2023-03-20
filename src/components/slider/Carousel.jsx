@@ -38,7 +38,7 @@ export default function Carousel() {
           className="parallax-bg blur-sm"
           style={{
             "background-image":
-              "url(https://images.pexels.com/photos/8688188/pexels-photo-8688188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+              "url(https://images.unsplash.com/photo-1530138897365-a9615c610099?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80)",
           }}
           data-swiper-parallax="-23%"
         ></div>
