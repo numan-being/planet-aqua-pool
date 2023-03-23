@@ -4,7 +4,7 @@ import {MdOutlineWaterDrop} from "react-icons/md"
 
 const About = () => {
   return (
-    <section id="about" className="mt-32">
+    <section id="about" className="mt-36 mb-12">
       <div >
         <h1
           className="text-center mt-5 text-4xl font-bold text-green-300 xl:text-6xl"

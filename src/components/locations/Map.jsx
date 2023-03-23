@@ -1,10 +1,11 @@
 import React from "react";
 import map from "../../assets/location.png";
 import {FaMapMarkerAlt} from 'react-icons/fa'
+import poster from '../../assets/poster.jpg'
 
 const Map = () => {
   return (
-    <section class="text-gray-600 body-font mt-36">
+    <div class="text-gray-600 body-font mt-36">
       <h1
         className="text-center text-4xl font-bold mt-8 text-green-300 xl:text-6xl"
         style={{ color: "#4a4a4a", fontWeight: 900 }}
@@ -89,10 +90,13 @@ const Map = () => {
               </div>
             </div>
           </div>
-
         </div>
       </div>
-    </section>
+      <div className="w-full">
+            <img src={poster} alt="" />
+          </div>
+    </div>
+
   );
 };
 

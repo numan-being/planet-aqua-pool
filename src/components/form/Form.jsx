@@ -114,7 +114,7 @@ const Form = () => {
           >
             <span className="text-2xl text-white"> BOOK A </span>
             <br />
-            FREE TRAIL ?
+            SESSION
           </p>
           <div className=" flex flex-col items-start md:items-end ">
             <span className="sm:text-lg mb-4 md:text-3xl font-semibold text-white hover:text-white flex">
